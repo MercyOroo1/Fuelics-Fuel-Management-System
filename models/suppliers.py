@@ -80,6 +80,15 @@ class Supplier:
        cursor.execute(sql,(id,))
        retailers = cursor.fetchall()
        return retailers
+     
+     @staticmethod
+     def find_supplier_by_location(cursor,location):
+         sql = """SELECT suppliers.id, suppliers.name FROM suppliers WHERE suppliers.location = ?"""
+         cursor.execute(sql,(location,))
+         suppliers = cursor.fetchall()
+         return suppliers
+
+
     
 
    #   def __repr__(self):

@@ -24,8 +24,9 @@ def main():
         print("9. Get all retailers that supply a specific product")
         print("10. Get all suppliers that supply a specific retailer")
         print("11. Get all products that are supplied by a specific retailer")
-        print("12.Delete records")
-        print("13.Exit")
+        print("12. Find supplier by location")
+        print("13. Delete records")
+        print("14.Exit")
         choice = input("Enter choice: ")
 
         conn = get_db_connection()
@@ -136,6 +137,14 @@ def main():
               else:
                  print ("Retailer does not sell any product")
         elif choice == "12":
+            suppliers_location = input("Enter supplier location: ")
+            suppliers = Supplier.find_supplier_by_location(cursor,suppliers_location)
+            for supplier in suppliers:
+               if suppliers is not None:
+                  print(f"Supplier ID: {supplier[0]}, Supplier Name: {supplier[1]}")
+               else:
+                  print ("No suppliers in this location")
+        elif choice == "13":
            
 
 
@@ -170,7 +179,7 @@ def main():
                             break
                         else:
                          print("Invalid option. Please enter a valid option.")
-        elif choice == "13":
+        elif choice == "14":
            print ("exiting")
            break
         else:
