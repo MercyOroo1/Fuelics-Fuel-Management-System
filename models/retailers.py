@@ -92,7 +92,13 @@ class Retailer:
          cursor.execute(sql,(id,))
          products = cursor.fetchall()
          return products
-         
+      
+     @staticmethod
+     def find_retailer_by_town(cursor,town):
+         sql = """SELECT retailers.id, retailers.name FROM retailers WHERE retailers.town = ?"""
+         cursor.execute(sql,(town,))
+         retailers = cursor.fetchall()
+         return retailers
      
 
 # flight = Flight(2,"KQ",12345,"Sweden",1)
