@@ -61,7 +61,7 @@ def main():
                          retailers_region = input("Enter the region where the retailer is located: ")
                          retailers_manager = input("Enter the retailers manager: ")  
                          cursor.execute('INSERT INTO retailers (name,phone,town,region,manager) VALUES (?,?,?,?,?)',(retailers_name,retailers_phone,retailers_town,retailers_region,retailers_manager))
-                         
+                         conn.commit()
                         elif choice == "3":
                             print("Exiting")
                             break
