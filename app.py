@@ -191,7 +191,7 @@ def main():
                         elif choice == "3":
                              id = int(input("Enter Retailer ID: "))
                              Retailer.delete_retailers(cursor,id)
-                             conn.commit
+                             conn.commit()
                              print(f"Retailer {id} has been deleted")
                         elif choice == "4":
                             print("Exiting")
