@@ -8,8 +8,9 @@ cursor = conn.cursor()
 def main():
     create_tables()
    
-
+    print("Hello! Welcome to the Fuelics Fuel Management System, your one-stop solution for all your fuel management needs. How can I assist you today?")
     while True:
+        
         print("\n1. Add record")
         print("2. List all suppliers")
         print("3. List all retailers")
@@ -34,7 +35,7 @@ def main():
                     while True:
                         print("\n1. Add supplier and product")
                         print("2. Add retailer")
-                        print("3. Exit")
+                        print("3. Back")
                 
                         choice = input("Enter choice: ")
                         if choice == "1":
@@ -171,7 +172,7 @@ def main():
                         print("\n1. Delete Suppliers")
                         print("2. Delete Products")
                         print("3. Delete retailers")
-                        print("4. Exit")
+                        print("4. Back")
                         choice = input("Enter choice: ")
                         if choice == "1":
                            id = int(input("Enter Supplier ID: "))
