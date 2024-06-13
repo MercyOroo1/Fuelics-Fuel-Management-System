@@ -19,11 +19,11 @@ The Fuelics Fuel Management System is a command-line interface (CLI) application
    1. *Search Product by Supplier*: Efficiently find the product supplied by a specific supplier.
    1. *Find Retailers by Town*: Locate retailers based on their town.
    1. *Find Suppliers by Location*: Search for suppliers based on their geographic location.
-   1. *Delete Retailer by ID*: Remove a retailer from the system using their unique ID.
-   1. *Delete Supplier by ID*: Eliminate a supplier from the database using their unique ID.
-   1. *Delete Product by ID*: Remove a product from the system using their unique ID.
+   1. *Delete Retailer by ID*: Remove a retailer using their unique ID from the system.
+   1. *Delete Supplier by ID*: Eliminate a supplier using their unique ID from the database.
+   1. *Delete Product by ID*: Remove a product using their unique ID from the system.
 
-With this application, users can maintain an organized and efficient fuel management database, ensuring easy access to critical information and operations.
+This application allows users to maintain an organized and efficient fuel management database, ensuring easy access to critical information and operations.
 
 ## Installation
 Use git clone to download the documents from GitHub.
@@ -32,7 +32,7 @@ Use git clone to download the documents from GitHub.
 Git
  
 ## Installation Instructions
-Git clone 
+Git clone https://github.com/MercyOroo1/Fuelics-Fuel-Management-System.git
 
 ## Technologies used
 1. GitHub
