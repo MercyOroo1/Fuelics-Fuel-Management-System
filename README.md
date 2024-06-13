@@ -43,3 +43,6 @@ Git clone https://github.com/MercyOroo1/Fuelics-Fuel-Management-System.git
 The content of this site is under the MIT License.
 Copyright (c) 2018.
 
+## Support and contact details
+Email: mercy.oroo@moringaschool.com
+
