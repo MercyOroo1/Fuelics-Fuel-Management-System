@@ -5,9 +5,9 @@
 ## Description
 The Fuelics Fuel Management System is a command-line interface (CLI) application designed for efficient fuel management. This robust system provides a main menu which allows users to:
 
-   1. Add Suppliers and Products: Seamlessly register new suppliers into the database along with the products they supply.
-   1. Add Retailers: Register retailers who can later be assigned specific products.
-   1. Assign Products to Retailers: Allocate fuel products to registered retailers.
+   1. *Add Suppliers and Products*: Seamlessly register new suppliers into the database along with the products they supply.
+   1. *Add Retailers*: Register retailers who can later be assigned specific products.
+   1. *Assign Products to Retailers*: Allocate fuel products to registered retailers.
    1. Search Products by Retailer: Effortlessly find all products supplied by a particular retailer.
    1. List Products: Allows the user to list products with their retailers and suppliers, if a product lacks a supplier, the column for retailers shows none.
    1. List Retailers: Lists all retailers with the products they sell. If a retailer does not supply any product, the column for products displays none.
@@ -21,4 +21,24 @@ The Fuelics Fuel Management System is a command-line interface (CLI) application
    1. Find Suppliers by Location: Search for suppliers based on their geographic location.
    1. Delete Retailer by ID: Remove a retailer from the system using their unique ID.
    1. Delete Supplier by ID: Eliminate a supplier from the database using their unique ID.
+
 With this application, users can maintain an organized and efficient fuel management database, ensuring easy access to critical information and operations.
+
+## Installation
+Use git clone to download the documents from GitHub.
+
+## Installation Requirements
+Git
+ 
+## Installation Instructions
+Git clone 
+
+## Technologies used
+1. GitHub
+1. Python
+1. SQL
+
+## License 
+The content of this site is under the MIT License.
+Copyright (c) 2018.
+
