@@ -108,19 +108,21 @@ def main():
         elif choice == "8":
            product_id = int(input("Enter product ID: "))
            suppliers = Product.product_suppliers(cursor,product_id)
-           for supplier in suppliers:
-              if supplier is not None:
+           if not suppliers:
+              print("There are no suppliers for this product")
+           else:
+              for supplier in suppliers:
                  print(f"Product {product_id} is supplied by Supplier ID: {supplier[0]}, Supplier Name: {supplier[1]}")
-              else: 
-                 print("Supplier does not supply any product")
+            
         elif choice == "9":
             product_id = int(input("Enter product ID: "))
             retailers = Product.product_retailers(cursor,product_id)
-            for retailer in retailers:
-              if retailer is not None:
+            if not retailers:
+               print("There are no retailers for this product")
+            else:
+             for retailer in retailers:
                  print(f"Product {product_id} is supplied by Retailer ID: {retailer[0]},Retailers Name: {retailer[1]}")
-              else: 
-                 print("Retailer does not supply any product")
+             
         elif choice == "10":
            retailer_id = int(input("Enter Retailer ID: "))
            suppliers = Retailer.retailer_suppliers(cursor,retailer_id)
