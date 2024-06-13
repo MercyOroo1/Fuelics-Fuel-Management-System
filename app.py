@@ -146,13 +146,16 @@ def main():
                else:
                   print ("No suppliers in this location")
         elif choice == "13":
-            retailers_town = input("Enter retailer town: ")
-            retailers = Retailer.find_retailer_by_town(cursor,retailers_town)
-            for retailer in retailers:
-               if retailers is not None:
-                  print(f"Retailer ID: {retailer[0]}, Retailers Name: {retailer[1]}")
-               else:
-                  print ("No retailers in this location")
+           
+           retailers_town = input("Enter retailer town: ")
+           retailers = Retailer.find_retailer_by_town(cursor, retailers_town)
+    
+           if not retailers:
+            print("No retailers in this location")
+           else:
+             for retailer in retailers:
+               print(f"Retailer ID: {retailer[0]}, Retailer's Name: {retailer[1]}")
+  
             
         elif choice == "14":
            
