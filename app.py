@@ -124,19 +124,21 @@ def main():
         elif choice == "10":
            retailer_id = int(input("Enter Retailer ID: "))
            suppliers = Retailer.retailer_suppliers(cursor,retailer_id)
-           for supplier in suppliers:
-              if supplier is not None:
-                 print(f"Retailer {retailer_id} is supplied by Supplier ID: {supplier[0]}, Supplier Name: {supplier[1]}")
-              else:
-                 print ("Retailer is not supplied by any retailer")
+          
+           if not suppliers:
+              print ("Retailer is not supplied by any retailer")
+           else:
+              for supplier in suppliers:
+                print(f"Retailer {retailer_id} is supplied by Supplier ID: {supplier[0]}, Supplier Name: {supplier[1]}")
+             
         elif choice == "11":
             retailer_id = int(input("Enter Retailer ID: "))
             products = Retailer.retailers_products(cursor,retailer_id)
-            for product in products:
-              if products is not None:
-                 print(f"Retailer {retailer_id} is sells  Product ID: {product[0]}, Product Name: {product[1]}")
-              else:
+            if not products:
                  print ("Retailer does not sell any product")
+            else:
+                 for product in products:
+                  print(f"Retailer {retailer_id} is sells  Product ID: {product[0]}, Product Name: {product[1]}")
         elif choice == "12":
             suppliers_location = input("Enter supplier location: ")
             suppliers = Supplier.find_supplier_by_location(cursor,suppliers_location)
