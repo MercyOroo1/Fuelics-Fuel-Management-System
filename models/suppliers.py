@@ -91,8 +91,7 @@ class Supplier:
 
     
 
-   #   def __repr__(self):
-   #      return f'<{self.name}>'
+  
     
      
 

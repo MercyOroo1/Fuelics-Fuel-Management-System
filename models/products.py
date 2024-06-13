@@ -70,5 +70,3 @@ class Product:
 
 
 
-# pilots = Pilot(2,"Mercy",12345,723,1720352227)
-# print(pilots._phone_number)

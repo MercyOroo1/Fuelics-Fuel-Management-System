@@ -7,10 +7,7 @@ conn= get_db_connection()
 cursor = conn.cursor()
 def main():
     create_tables()
-    # conn= get_db_connection()
-    # cursor = conn.cursor()
-    # cursor.execute("""DROP TABLE suppliers""")
-    # conn.commit()
+   
 
     while True:
         print("\n1. Add record")
